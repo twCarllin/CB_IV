@@ -203,11 +203,11 @@ def draw_chart(df):
 
 
 def main():
-    df = read_n_process_data("./Cathay_CB_27271_Project/20230501_20230531_2727/", "./Cathay_CB_27271_Project/20230501_20230531_27271/")
+    df = read_n_process_data("", "")
     df = cal_IV(df)
 
-    df.to_csv("27271_IV.csv", index=False)
-    # df = pd.read_csv("27271_IV.csv")
+    df.to_csv("", index=False)
+    # df = pd.read_csv("")
     draw_chart(df)
 
 
